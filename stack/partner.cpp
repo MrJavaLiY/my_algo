@@ -24,7 +24,9 @@ void Match(Person persons[],int num){
     for (int i = 0; i <min ; ++i) {
             printf("man:%s To woman:%s\n",man[maxVal++].name,woman[womanVal++].name);
     }
-//说明看【看【开辟【Top != womanTop){
+//说明有男的没有舞伴
+
+    if (manTop != womanTop){
         if (maxVal<manTop){
           int val2 = 0;
          for(int i = maxVal;i<manTop;i++){
